@@ -1,0 +1,1210 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f5ff;
+    color:#333;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+    padding:18px 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#a000ff;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#444;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ff3cac;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    padding:120px 10%;
+    background:linear-gradient(135deg,#ff3cac,#784ba0,#2b86c5);
+    color:#fff;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-text span{
+    color:yellow;
+}
+
+.hero-text h2{
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.tagline{
+    font-size:20px;
+    font-weight:600;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#fff;
+    color:#a000ff;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#ff3cac;
+    color:#fff;
+}
+
+.hero-image img{
+    width:350px;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about{
+    padding:90px 10%;
+}
+
+.about h2{
+    text-align:center;
+    font-size:40px;
+    color:#a000ff;
+    margin-bottom:50px;
+}
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.about-image img{
+    width:320px;
+    border-radius:20px;
+}
+
+.about-text{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills{
+    padding:90px 10%;
+    background:#fff;
+}
+
+.skills h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#a000ff;
+}
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill p{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.progress{
+    width:100%;
+    height:22px;
+    background:#ddd;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:22px;
+    background:linear-gradient(to right,#ff3cac,#784ba0);
+    text-align:center;
+    color:#fff;
+    font-size:13px;
+    line-height:22px;
+}
+
+.w95{width:95%;}
+.w92{width:92%;}
+.w90{width:90%;}
+.w88{width:88%;}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services{
+    padding:90px 10%;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#a000ff;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:50px;
+    color:#ff3cac;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ==========================
+   PORTFOLIO
+========================== */
+
+.portfolio{
+    padding:90px 10%;
+    background:#f8f5ff;
+}
+
+.portfolio h2{
+    text-align:center;
+    color:#a000ff;
+    margin-bottom:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact{
+    padding:90px 10%;
+}
+
+.contact h2{
+    text-align:center;
+    color:#a000ff;
+    margin-bottom:30px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#a000ff;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff3cac;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#2b2b2b;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.social a{
+    color:white;
+    margin:0 10px;
+    font-size:25px;
+}
+
+.social a:hover{
+    color:#ff3cac;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.hero,
+.about-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links li{
+    margin:10px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheetal | Portfolio</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Sheetal
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Sheetal</span></h1>
+
+<h2>ITI COPA Student</h2>
+
+<p>
+BA Private Student from Kotka Nihang, Punjab.
+Passionate about Photo Editing, Video Editing,
+Wedding Album Design and Graphic Designing.
+</p>
+
+<p class="tagline">
+Turning Memories into Beautiful Designs Through
+Photo & Video Editing.
+</p>
+
+<a href="#portfolio" class="btn">
+View Portfolio
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg"
+alt="Profile">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="images/about.jpg"
+alt="About">
+
+</div>
+
+<div class="about-text">
+
+<p>
+
+Hello!
+I'm Sheetal.
+
+I am currently studying ITI COPA and
+also pursuing BA as a private student.
+
+I love creating creative designs.
+
+My passion is editing wedding photos,
+making beautiful albums,
+editing videos,
+designing invitation cards,
+social media posts
+and changing photo backgrounds.
+
+I always try to give every photo a
+professional and attractive look.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skill">
+
+<p>Wedding Photo Editing</p>
+
+<div class="progress">
+
+<div class="progress-bar w95">
+95%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Video Editing</p>
+
+<div class="progress">
+
+<div class="progress-bar w90">
+90%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Album Designing</p>
+
+<div class="progress">
+
+<div class="progress-bar w92">
+92%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Invitation Card Design</p>
+
+<div class="progress">
+
+<div class="progress-bar w88">
+88%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Background Change</p>
+
+<div class="progress">
+
+<div class="progress-bar w95">
+95%
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services"
+id="services">
+
+<h2>My Services</h2>
+
+<div class="service-container">
+
+<div class="card">
+
+<i class="fa-solid fa-camera-retro"></i>
+
+<h3>Photo Editing</h3>
+
+<p>
+Professional wedding photo editing
+and retouching.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-film"></i>
+
+<h3>Video Editing</h3>
+
+<p>
+
+Creative reels,
+short videos,
+cinematic edits.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-image"></i>
+
+<h3>Album Design</h3>
+
+<p>
+
+Modern wedding album designing.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-id-card"></i>
+
+<h3>Card Design</h3>
+
+<p>
+
+Invitation card,
+Birthday card,
+Poster design.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section class="portfolio"
+id="portfolio">
+
+<h2>Portfolio</h2>
+
+<div class="gallery">
+
+<img src="images/work1.jpg">
+
+<img src="images/work2.jpg">
+
+<img src="images/work3.jpg">
+
+<img src="images/work4.jpg">
+
+<img src="images/work5.jpg">
+
+<img src="images/work6.jpg">
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials"
+id="testimonials">
+
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+
+<p>
+
+"Excellent editing quality.
+Beautiful wedding album."
+
+</p>
+
+<h4>- Happy Client</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+"Very creative designer.
+Highly recommended."
+
+</p>
+
+<h4>- Customer</h4>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact"
+id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name">
+
+<input
+type="email"
+placeholder="Your Email">
+
+<textarea
+placeholder="Your Message">
+</textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>Sheetal Portfolio</h3>
+
+<p>
+
+Turning Memories into Beautiful Designs
+Through Photo & Video Editing.
+
+</p>
+
+<div class="social">
+
+<a href="#">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheetal | Portfolio</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Sheetal
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Sheetal</span></h1>
+
+<h2>ITI COPA Student</h2>
+
+<p>
+BA Private Student from Kotka Nihang, Punjab.
+Passionate about Photo Editing, Video Editing,
+Wedding Album Design and Graphic Designing.
+</p>
+
+<p class="tagline">
+Turning Memories into Beautiful Designs Through
+Photo & Video Editing.
+</p>
+
+<a href="#portfolio" class="btn">
+View Portfolio
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg"
+alt="Profile">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="images/about.jpg"
+alt="About">
+
+</div>
+
+<div class="about-text">
+
+<p>
+
+Hello!
+I'm Sheetal.
+
+I am currently studying ITI COPA and
+also pursuing BA as a private student.
+
+I love creating creative designs.
+
+My passion is editing wedding photos,
+making beautiful albums,
+editing videos,
+designing invitation cards,
+social media posts
+and changing photo backgrounds.
+
+I always try to give every photo a
+professional and attractive look.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skill">
+
+<p>Wedding Photo Editing</p>
+
+<div class="progress">
+
+<div class="progress-bar w95">
+95%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Video Editing</p>
+
+<div class="progress">
+
+<div class="progress-bar w90">
+90%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Album Designing</p>
+
+<div class="progress">
+
+<div class="progress-bar w92">
+92%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Invitation Card Design</p>
+
+<div class="progress">
+
+<div class="progress-bar w88">
+88%
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Background Change</p>
+
+<div class="progress">
+
+<div class="progress-bar w95">
+95%
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services"
+id="services">
+
+<h2>My Services</h2>
+
+<div class="service-container">
+
+<div class="card">
+
+<i class="fa-solid fa-camera-retro"></i>
+
+<h3>Photo Editing</h3>
+
+<p>
+Professional wedding photo editing
+and retouching.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-film"></i>
+
+<h3>Video Editing</h3>
+
+<p>
+
+Creative reels,
+short videos,
+cinematic edits.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-image"></i>
+
+<h3>Album Design</h3>
+
+<p>
+
+Modern wedding album designing.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-id-card"></i>
+
+<h3>Card Design</h3>
+
+<p>
+
+Invitation card,
+Birthday card,
+Poster design.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section class="portfolio"
+id="portfolio">
+
+<h2>Portfolio</h2>
+
+<div class="gallery">
+
+<img src="images/work1.jpg">
+
+<img src="images/work2.jpg">
+
+<img src="images/work3.jpg">
+
+<img src="images/work4.jpg">
+
+<img src="images/work5.jpg">
+
+<img src="images/work6.jpg">
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials"
+id="testimonials">
+
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+
+<p>
+
+"Excellent editing quality.
+Beautiful wedding album."
+
+</p>
+
+<h4>- Happy Client</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+"Very creative designer.
+Highly recommended."
+
+</p>
+
+<h4>- Customer</h4>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact"
+id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name">
+
+<input
+type="email"
+placeholder="Your Email">
+
+<textarea
+placeholder="Your Message">
+</textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>Sheetal Portfolio</h3>
+
+<p>
+
+Turning Memories into Beautiful Designs
+Through Photo & Video Editing.
+
+</p>
+
+<div class="social">
+
+<a href="#">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+.hero-image img{
+    width:250px;
+}
+}
